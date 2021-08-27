@@ -34,9 +34,9 @@ function displayQuantity() {
                         }" alt="ours peluche"></td>
                         <td class="old">${product.name}</td>
                         <td class="old">${product.selectColors}</td>
-                        <td class="old"  ><button class="decrease__item ${index}"> - </button>
+                        <td class="old"  ><button class="decrease__item itemBtn ${index}"> - </button>
                         ${product.quantity}
-                        <button class="increase__item ${index}"> + </button></td>
+                        <button class="increase__item itemBtn ${index}"> + </button></td>
                         <td class="old">${(
                           (product.price * product.quantity) /
                           100
@@ -89,7 +89,7 @@ function displayQuantity() {
                 </form>`
     );
 
-    const decreaseItem = document.querySelectorAll(".decrease__item ");
+    const decreaseItem = document.querySelectorAll(".decrease__item");
     decreaseItem.forEach((btn) => {
       btn.addEventListener("click", (e) => {
         removeOneItem(e, items);

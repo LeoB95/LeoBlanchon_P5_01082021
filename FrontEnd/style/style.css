@@ -303,6 +303,11 @@ img#productImageCard {
   margin-right: 50px;
   padding: 10px 20px 30px 20px;
 }
+.itemBtn {
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+}
 .rowInfo {
   display: flex;
   flex-wrap: nowrap;
@@ -690,8 +695,18 @@ i.icon__home {
     width: auto !important;
     max-width: 100%;
   }
-  .bubble__box {
+  img#productImageCard {
+    max-width: 200px !important;
+  }
+  .product__info {
     margin: 20px auto 20px auto !important;
+    position: initial;
+    flex-direction: column;
+    font-size: 12px;
+  }
+  .bubble__box {
+    position: 0;
+    margin: 0;
   }
   .bubble__center {
     justify-content: center !important;
@@ -703,6 +718,9 @@ i.icon__home {
   }
   tr {
     flex-direction: row;
+  }
+  .social {
+    margin: 10px !important;
   }
   .footer__Links {
     flex-direction: column;
