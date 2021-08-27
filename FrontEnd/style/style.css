@@ -77,6 +77,7 @@ nav {
   border-left: none;
   border-radius: 25px;
   padding-right: 20px;
+  margin-right: 20px;
   background-color: #e6b3dbd3;
 }
 /* Effet survol nav */
@@ -259,7 +260,7 @@ div.order {
   margin: auto;
   margin-bottom: 20px;
 }
-p.orderBtn:hover {
+.orderBtn:hover {
   transform: scale(1);
   cursor: pointer;
   transition: 0.2s;
@@ -418,7 +419,7 @@ i.addIcon {
 main.summary {
   width: 100%;
 }
-.summary img {
+.incart__image {
   width: 150px;
   border-radius: 25px;
   box-shadow: gray 2px 2px 2px;
@@ -429,7 +430,7 @@ table {
   box-shadow: #f5c0eaab 2px 2px 2px;
   background-color: #f3e9f1;
   margin-bottom: 40px !important;
-  width: 90% !important;
+  width: 100% !important;
   justify-content: center;
 }
 td {
@@ -438,7 +439,6 @@ td {
 th,
 tr {
   justify-content: space-around;
-  padding-right: 170px;
 }
 tr {
   display: flex;
@@ -446,10 +446,9 @@ tr {
 }
 th {
   padding-left: 10px;
-  border-bottom: 2px solid rgba(182, 181, 181, 0.432);
 }
-button.cancel__order {
-  background-color: #f3e9f1;
+button.cancel__ordered {
+  background-color: #ff65ad8e;
   border: 2px solid #fc466b;
   padding: 10px;
   border-radius: 25px;
@@ -473,6 +472,9 @@ input {
   margin-bottom: 50px;
   font-size: 24px;
   font-style: italic;
+}
+.total__cart {
+  margin-left: 40px;
 }
 .link__home {
   font-weight: 24px;
@@ -517,6 +519,15 @@ li.puce {
   padding: 10px;
   border: grey 2px solid;
   border-radius: 50px;
+}
+.orderId {
+  margin: 20px;
+}
+.title__orderId {
+  margin-bottom: 20px;
+}
+form {
+  margin-left: 40px;
 }
 /* CART PAGE #END# */
 /* FOOTER #START# */
@@ -614,6 +625,9 @@ i.icon__home {
   .header__navBtn__title {
     display: none;
     background: none;
+  }
+  .social {
+    margin-left: 0;
   }
 }
 /* TABLET VIEWPORT #END# */

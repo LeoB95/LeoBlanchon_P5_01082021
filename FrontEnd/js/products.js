@@ -1,3 +1,5 @@
+"use strict";
+
 const productId = window.location.search.substr(1);
 fetch(`http://localhost:3000/api/teddies/${productId}`)
   .then((response) => response.json())
@@ -54,6 +56,7 @@ fetch(`http://localhost:3000/api/teddies/${productId}`)
     errorMessage();
     console.log(e);
   });
+
 function addItemCart(item) {
   let cartItem = [];
   let saveItemCart = {
@@ -65,6 +68,7 @@ function addItemCart(item) {
     selectColors: item.selectColors,
   };
   let otherItem = true;
+
   if (sessionStorage.getItem("itemStorage") === null) {
     cartItem.push(saveItemCart);
     sessionStorage.setItem("itemStorage", JSON.stringify(cartItem));
@@ -79,7 +83,7 @@ function addItemCart(item) {
     if (otherItem) cartItem.push(saveItemCart);
     sessionStorage.setItem("itemStorage", JSON.stringify(cartItem));
   }
+
   itemConfirmation();
   alert("Votre produit a été ajouté au panier");
-}
-///END
+} ///END

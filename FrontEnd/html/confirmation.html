@@ -28,14 +28,13 @@
 							<i class="far fa-address-book icon icon__header"></i>
 						</div>
 						<div class="header__navBtn__title">
-							<p class="name__Icon"> Coordonnées </p>
+							<p class="name__Icon"> Commandes </p>
 						</div>
 					</div>
 				</a>
 				<a href="./cart.html">
-					<div class="header__navBtn icon__block">
-						<div class="header__navBtn__icon counter__block">
-							<span id="counter">0</span>
+					<div class="header__navBtn ">
+						<div class="header__navBtn__icon">
 							<i class="fas fa-shopping-cart   icon icon__header"></i>
 						</div>
 						<div class="header__navBtn__title">
@@ -52,37 +51,8 @@
 		<div class="index__main__img">
 			<img src="../public/images/colored_bags.jpg" alt="sacs de shopping colorés" class="index__main__img">
 		</div>
-		<section class="mainForm container" id="mainForm">
-			<!-- Formulaire de coordonnées de commande  -->
-			<form class="d-flex justify-content-center flex-column col-12" id="formSubmit" method="POST">
-				<div class="col-md-12 mb-3">
-					<div class="formInput">
-						<label for="firstName">Prénom</label>
-						<input class="form-control" id="formFirstName" placeholder="Teddy" required>
-					</div>
-					<div class="formInput">
-						<label for="lastName">Nom</label>
-						<input class="form-control " id="formLastName" placeholder="Bear" required>
-					</div>
-					<div class="formInput">
-						<label for="address">Adresse</label>
-						<input class="form-control" id="formAddress" placeholder="42 rues des ours en peluche" required>
-					</div>
-					<div class="formInput">
-						<label for="city">Ville</label>
-						<input class="form-control " id="formCity" placeholder="Orinoland" required>
-					</div>
-					<div class="formInput">
-						<label for="email">Email</label>
-						<input class="form-control" id="formEmail" placeholder="ours@orinoco.fr" required>
-					</div>
-				</div>
-				<!-- Bouton validation formulaire  -->
-				<button class="validate" id="submit">
-					<p>Valider vôtre commande</p>
-				</button>
-			</form>
-		</section>
+		<div id="order__confirmed">
+		</div>
 	</main>
 	<!-- MAIN END  -->
 	<footer>
