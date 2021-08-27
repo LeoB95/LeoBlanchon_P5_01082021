@@ -21,8 +21,7 @@ fetch("http://localhost:3000/api/teddies")
       }"><b class="row goProduct">Voir l'article</b></a>
       </div>
       </li>`;
-    } // Ajouter mes element créer dans le HTML pour afficher mes produits
-
+    }
     document.getElementById("bear").innerHTML = html;
   }) // Message d'erreur
   .catch((e) => {

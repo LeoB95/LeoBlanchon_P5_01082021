@@ -28,7 +28,8 @@ function displayQuantity() {
     let html = "";
     items.forEach((product, index) => {
       total = total + product.price * product.quantity;
-      html += `<tr>
+      html += `
+      <div id="item__select"> <tr>
                         <td class="old"><img class="incart__image" src="${
                           product.imageUrl
                         }" alt="ours peluche"></td>
@@ -43,8 +44,8 @@ function displayQuantity() {
                         )
                           .toFixed(2)
                           .replace(".", ",")}€</td>
-                        <td><button class="delete__item ${index}>Supprimer</button></td>
-                    </tr>`;
+                        <td><button class="delete__item ${index}><p>Supprimer</p></button></td>
+                    </tr></div>`;
       document.querySelector(".order__details").innerHTML = html;
     });
     boxSection.insertAdjacentHTML(

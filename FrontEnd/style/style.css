@@ -421,16 +421,20 @@ i.addIcon {
 }
 /* PRODUCT PAGE #END# */
 /* CART PAGE #START# */
-main.summary {
+.main__summary {
   width: 100%;
 }
+
 .incart__image {
   width: 150px;
   border-radius: 25px;
   box-shadow: gray 2px 2px 2px;
 }
+#item__select {
+  width: 100%;
+}
 table {
-  padding: 20px;
+  padding: 10px;
   border: #f8c4ee63 2px solid;
   box-shadow: #f5c0eaab 2px 2px 2px;
   background-color: #f3e9f1;
@@ -440,18 +444,17 @@ table {
 }
 td {
   padding-bottom: 20px;
+  justify-content: space-between;
 }
 th,
 tr {
   justify-content: space-around;
 }
-tr {
-  display: flex;
-  flex-direction: row;
-}
+
 th {
   padding-left: 10px;
 }
+
 button.cancel__ordered {
   background-color: #ff65ad8e;
   border: 2px solid #fc466b;
@@ -716,9 +719,7 @@ i.icon__home {
   .bubble__left-point {
     display: none;
   }
-  tr {
-    flex-direction: row;
-  }
+
   .social {
     margin: 10px !important;
   }
