@@ -418,7 +418,7 @@ i.addIcon {
 main.summary {
   width: 100%;
 }
-.summary img {
+.cart__image {
   width: 150px;
   border-radius: 25px;
   box-shadow: gray 2px 2px 2px;
