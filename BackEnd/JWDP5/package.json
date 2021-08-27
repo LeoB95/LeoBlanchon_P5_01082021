@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "This is the back end server for Project 5 of the Junior Web Developer path.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "LeoBlanchon_P5_01082021"
+  },
+  "keywords": [
+    "Orinoco",
+    "teddies"
+  ],
+  "author": "Leo Blanchon",
+  "license": "MIT",
+  "dependencies": {
+    "node": "^16.6.1",
+    "node.js": "^0.0.1-security"
+  },
+  "reponse":  [ "Orinoco_script_server_is_running_good"  ]
+
+}

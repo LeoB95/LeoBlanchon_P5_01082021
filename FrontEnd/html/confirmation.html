@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="../style/style.css">
+	<title>Confirmation de votre commande !</title>
+	<link rel="shortcut icon" href="../public/images/OrinoIcon.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<div class="header__block">
+			<div class="header__logo">
+				<a href="../index.html">
+					<img src="../public/images/logo.png" class="logo__header"
+						alt="logo Orinoco avec caddie et nom du site">
+				</a>
+			</div>
+			<nav class="header__navigation">
+				<a href="./confirmation.html">
+					<div class="header__navBtn">
+						<div class="header__navBtn__icon">
+							<i class="far fa-address-book icon icon__header"></i>
+						</div>
+						<div class="header__navBtn__title">
+							<p class="name__Icon"> Coordonnées </p>
+						</div>
+					</div>
+				</a>
+				<a href="./cart.html">
+					<div class="header__navBtn icon__block">
+						<div class="header__navBtn__icon counter__block">
+							<span id="counter">0</span>
+							<i class="fas fa-shopping-cart   icon icon__header"></i>
+						</div>
+						<div class="header__navBtn__title">
+							<p class="name__Icon"> Panier </p>
+						</div>
+					</div>
+				</a>
+			</nav>
+		</div>
+	</header>
+	<!-- HEADER END  -->
+	<!-- MAIN START -->
+	<main class="index__main container">
+		<div class="index__main__img">
+			<img src="../public/images/colored_bags.jpg" alt="sacs de shopping colorés" class="index__main__img">
+		</div>
+		<section class="mainForm container" id="mainForm">
+			<!-- Formulaire de coordonnées de commande  -->
+			<form class="d-flex justify-content-center flex-column col-12" id="formSubmit" method="POST">
+				<div class="col-md-12 mb-3">
+					<div class="formInput">
+						<label for="firstName">Prénom</label>
+						<input class="form-control" id="formFirstName" placeholder="Teddy" required>
+					</div>
+					<div class="formInput">
+						<label for="lastName">Nom</label>
+						<input class="form-control " id="formLastName" placeholder="Bear" required>
+					</div>
+					<div class="formInput">
+						<label for="address">Adresse</label>
+						<input class="form-control" id="formAddress" placeholder="42 rues des ours en peluche" required>
+					</div>
+					<div class="formInput">
+						<label for="city">Ville</label>
+						<input class="form-control " id="formCity" placeholder="Orinoland" required>
+					</div>
+					<div class="formInput">
+						<label for="email">Email</label>
+						<input class="form-control" id="formEmail" placeholder="ours@orinoco.fr" required>
+					</div>
+				</div>
+				<!-- Bouton validation formulaire  -->
+				<button class="validate" id="submit">
+					<p>Valider vôtre commande</p>
+				</button>
+			</form>
+		</section>
+	</main>
+	<!-- MAIN END  -->
+	<footer>
+		<div class="footer__social">
+			<div class="social">
+				<i class="fab fa-twitter"></i>
+				<p class="social__title">Twitter</p>
+			</div>
+			<div class="social">
+				<i class="fab fa-facebook-f"></i>
+				<p class="social__title">Facebook</p>
+			</div>
+			<div class="social">
+				<i class="fab fa-instagram"></i>
+				<p class="social__title">Instagram</p>
+			</div>
+		</div>
+		<div class="footer__Links">
+			<div class="footer__List">
+				<ul>
+					<li>
+						<a href="../index.html">
+							<img src="../public/images/logo.png" alt="logo Orinoco" class="logo__footer">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p class="footerLine2">Qui sommes-nous?</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__List">
+				<ul>
+					<li> <a href="#">
+							<p class="footerLine3">CGV & Mentions Légales</p>
+						</a> </li>
+					<li> <a href="#">
+							<p class="footerLine4">Politique de confidentialité</p>
+						</a> </li>
+				</ul>
+			</div>
+			<div class="footer__List">
+				<ul>
+					<li><a href="#">
+							<p class="footerLine5">FAQ</p>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<p class="footerLine6">Service client</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!-- FOOTER END  -->
+	<script src="../js/confirmation.js"></script>
+	<script src="../js/localStorage.js"></script>
+	<!-- Script icones fontawesome -->
+	<script src="//kit.fontawesome.com/e71513e375.js" defer>
+	</script>
+	<!-- Script JQUERY -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+</body>
+<!-- BODY END  -->
+
+</html>
+<!-- HTML END  -->
