@@ -1,4 +1,3 @@
-"use strict";
 let url = "http://localhost:3000/api/teddies";
 
 const mainFetch = () => {
@@ -11,7 +10,8 @@ const mainFetch = () => {
     })
     .catch((err) => console.error(err));
 };
-window.onload = mainFetch;
+window.onload = mainFetch; //Execute a JavaScript immediately after a page has been loaded
+//  Fetch des données du repository OpenClassrooms
 fetch("http://localhost:3000/api/teddies")
   .then((response) => response.json())
   .then((response) => {
@@ -24,15 +24,12 @@ fetch("http://localhost:3000/api/teddies")
 
       html += `<li class="item">
       <p class="row name">${response[i].name}</p>
-     <img id="productImage" class="row imageIndex" src="${
-       response[i].imageUrl
-     }">
+     <img id="productImage" class="row" src="${response[i].imageUrl}">
                <div class="addBlock">
+
              <button class="row addCart"> <b>Ajouter au panier</b><i class="fas fa-cart-arrow-down"> </i></button>
 </div>
-      <p id="productDescriptionIndex" class="row description">${
-        response[i].description
-      }</p>
+      <p id="productDescriptionIndex" class="row">${response[i].description}</p>
       <div class="card__bottom">
       <span class="row productPrice">${(response[i].price / 100)
         .toFixed(2)

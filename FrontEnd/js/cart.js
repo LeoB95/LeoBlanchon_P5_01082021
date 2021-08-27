@@ -26,14 +26,14 @@ function displayQuantity() {
     items.forEach((product, index) => {
       total = total + product.price * product.quantity;
       html += `<tr>
-                        <td class="old  "><img class="cart__image" src="${
+                        <td class="old"><img src="${
                           product.imageUrl
                         }" alt="ours peluche"></td>
                         <td class="old">${product.name}</td>
                         <td class="old">${product.selectColors}</td>
-                        <td class="old"  ><button class="itemBtn decrease__item ${index}"> - </button>
+                        <td class="old" style="padding-left:50px;"><button class="decrease__item ${index}"> - </button>
                         ${product.quantity}
-                        <button class=" itemBtn increase__item ${index}"> + </button></td>
+                        <button class="increase__item ${index}"> + </button></td>
                         <td class="old">${(
                           (product.price * product.quantity) /
                           100
