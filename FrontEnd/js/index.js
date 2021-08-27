@@ -1,3 +1,4 @@
+"use strict";
 let url = "http://localhost:3000/api/teddies";
 
 const mainFetch = () => {
@@ -10,8 +11,7 @@ const mainFetch = () => {
     })
     .catch((err) => console.error(err));
 };
-window.onload = mainFetch; //Execute a JavaScript immediately after a page has been loaded
-//  Fetch des données du repository OpenClassrooms
+window.onload = mainFetch;
 fetch("http://localhost:3000/api/teddies")
   .then((response) => response.json())
   .then((response) => {
