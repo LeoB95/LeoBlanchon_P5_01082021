@@ -54,35 +54,34 @@
 		</div>
 		<section class="mainForm container" id="mainForm">
 			<!-- Formulaire de coordonnées de commande  -->
-			<form class="d-flex justify-content-center flex-column col-12" id="formSubmit" method="POST">
-				<div class="col-md-12 mb-3">
-					<div class="formInput">
-						<label for="firstName">Prénom</label>
-						<input class="form-control" id="formFirstName" placeholder="Teddy" required>
-					</div>
-					<div class="formInput">
-						<label for="lastName">Nom</label>
-						<input class="form-control " id="formLastName" placeholder="Bear" required>
-					</div>
-					<div class="formInput">
-						<label for="address">Adresse</label>
-						<input class="form-control" id="formAddress" placeholder="42 rues des ours en peluche" required>
-					</div>
-					<div class="formInput">
-						<label for="city">Ville</label>
-						<input class="form-control " id="formCity" placeholder="Orinoland" required>
-					</div>
-					<div class="formInput">
-						<label for="email">Email</label>
-						<input class="form-control" id="formEmail" placeholder="ours@orinoco.fr" required>
-					</div>
+			<form class="contact__form" id="formSubmit" method="post">
+				<div class="formInput">
+					<label for="firstName">Prénom</label>
+					<input class="form-control" id="formFirstName" placeholder="Teddy" required>
+				</div>
+				<div class="formInput">
+					<label for="lastName">Nom</label>
+					<input class="form-control " id="formLastName" placeholder="Bear" required>
+				</div>
+				<div class="formInput">
+					<label for="address">Adresse</label>
+					<input class="form-control" id="formAddress" placeholder="42 rues des ours en peluche" required>
+				</div>
+				<div class="formInput">
+					<label for="city">Ville</label>
+					<input class="form-control " id="formCity" placeholder="Orinoland" required>
+				</div>
+				<div class="formInput">
+					<label for="email">Email</label>
+					<input class="form-control" id="formEmail" placeholder="ours@orinoco.fr" required>
 				</div>
 				<!-- Bouton validation formulaire  -->
-				<button class="validate" id="submit">
+				<button class="validate" id="submit" type="submit" onClick="window.location.href='./orderId.html';">
 					<p>Valider vôtre commande</p>
 				</button>
 			</form>
 		</section>
+		<div id="order__confirmed"></div>
 	</main>
 	<!-- MAIN END  -->
 	<footer>
@@ -142,7 +141,9 @@
 	</footer>
 	<!-- FOOTER END  -->
 	<script src="../js/confirmation.js"></script>
-	<script src="../js/localStorage.js"></script>
+	<script src="../js/cart.js" defer></script>
+
+	<script src="../js/localStorage.js" defer></script>
 	<!-- Script icones fontawesome -->
 	<script src="//kit.fontawesome.com/e71513e375.js" defer>
 	</script>

@@ -24,12 +24,15 @@ fetch("http://localhost:3000/api/teddies")
 
       html += `<li class="item">
       <p class="row name">${response[i].name}</p>
-     <img id="productImage" class="row" src="${response[i].imageUrl}">
+     <img id="productImage" class="row imageIndex" src="${
+       response[i].imageUrl
+     }">
                <div class="addBlock">
-
              <button class="row addCart"> <b>Ajouter au panier</b><i class="fas fa-cart-arrow-down"> </i></button>
 </div>
-      <p id="productDescriptionIndex" class="row">${response[i].description}</p>
+      <p id="productDescriptionIndex" class="row description">${
+        response[i].description
+      }</p>
       <div class="card__bottom">
       <span class="row productPrice">${(response[i].price / 100)
         .toFixed(2)
