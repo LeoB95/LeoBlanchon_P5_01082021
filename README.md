@@ -3,8 +3,7 @@
 https://leob95.github.io/LeoBlanchon_P5_01082021/FrontEnd/index.html
 
 La partie Back-End est issue du repository OpenClassrooms: 
-https://github.com/OpenClassrooms-Student-Center/JWDP5.git
-
+https://leob95.github.io/OC_LeoB95_P5_Orinoco/
 Pour lancer le projet:
 Cloner ce repository à l'adresse suivante: https://github.com/LeoB95/LeoBlanchon_P5_01082021.git . 
 Une fois localisé  dans la partie BackEnd  de ce dossier à l'aide du terminal "./BackEnd/JWDP5", saisissez la commande run npm install.
